@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: cursive;
+  font-weight: bold;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  color: #fafafa;
+  z-index: -1 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home .main {
+  background-image: url("./images/bg-slider4.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 750px) {
+  .home .main {
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav_bar {
+  background: rgba(56, 59, 255, 0.31);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.3px);
+  -webkit-backdrop-filter: blur(11.3px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  z-index: 100 !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user{
+  position: relative !important;
+  top: 0;
+  z-index: 0;
 }
